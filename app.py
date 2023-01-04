@@ -20,6 +20,7 @@ def clean_average_data(df, countries, crops, years):
 
     ave_df = pd.DataFrame(columns=main_df.columns) # new df to append to
     # take average for countries, year and crop that repeat in raw dataset
+    # a faster method would need to be used for a real customer facing dashboard but the cache helps for now
     for country in countries:
         country_df = main_df[main_df['Area'] == country]
         for crop in crops:
@@ -235,6 +236,7 @@ st.plotly_chart(fig5)
 st.markdown('''
 _Future analysis for this section could include comparing these graphs to crop prices.
 This could allow optimisation of pesticide use in relation to gross revenue, to help customers make informed decisions.
+  
 It would also be useful to compare these graphs with the land area used for crop growth, 
 especially for the data using rainfall and pesticides used._
 ''')
