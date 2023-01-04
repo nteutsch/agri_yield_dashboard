@@ -234,7 +234,9 @@ st.plotly_chart(fig5)
 
 st.markdown('''
 _Future analysis for this section could include comparing these graphs to crop prices.
-This could allow optimisation of pesticide use in relation to gross revenue, to help customers make informed decisions._
+This could allow optimisation of pesticide use in relation to gross revenue, to help customers make informed decisions.
+It would also be useful to compare these graphs with the land area used for crop growth, 
+especially for the data using rainfall and pesticides used._
 ''')
 
 
